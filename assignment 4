@@ -1,0 +1,15 @@
+check = int(input("How many numbers do you need to check? "))
+sumno = 0
+sumyes = 0
+count = 0
+while count < check:
+    count += 1
+    num = int(input("Enter a number: "))
+    h = num % 3
+    if h > 0:
+        print(str(num) + " is not divisible by 3")
+        sumno += 1
+    if h == 0:
+        print(str(num) + " is divisible by 3")
+        sumyes += 1
+print("You entered " + str(sumyes) + " number(s) that are divisble by 3.\n" "You entered " + str(sumno) + " number(s) that are not disvisble by 3.")
